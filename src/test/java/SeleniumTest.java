@@ -27,9 +27,9 @@ public class SeleniumTest {
     public void seleniumTest() {
 		
 		// Please change the following variables according to their names
-		String email = "losaxad295@chokxus.com";
+		String email = "bejev72128@angeleslid.com";
 		String pass = "i46uxK*dwm@23#I";
-		String blogname = "losaxad295";		// Please also change the blogname value in MainPage.java line 10 to the same value you added here
+		String blogname = "bejev72128";		// Please also change the blogname value in MainPage.java line 10 to the same value you added here
 		// Using VALID fake credit card information for testing
 		String creditCardNumber = "4263982640269299";
 		String ExpirationDate = "02 / 23";

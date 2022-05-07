@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class MainPage extends PageBase{
 
-	String blogname = "losaxad295";		// Please Change this value to the same value from SeleniumTest.java line 32
+	String blogname = "bejev72128";		// Please Change this value to the same value from SeleniumTest.java line 32
 	private JavascriptExecutor js = (JavascriptExecutor)driver;
 	private final By newPost = By.xpath("//button[@aria-label='Text']");
     private final By blogTitle = By.cssSelector("div[data-subview='postTypeForm'] div[data-name='title'] .editor-wrapper .editor-slot div[aria-label='Post title']");
