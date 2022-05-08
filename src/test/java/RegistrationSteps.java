@@ -21,7 +21,8 @@ public class RegistrationSteps extends PageBase{
 	}
 	
 	public void acceptPrivacy(){
-        System.out.println("switching selenium focus to the iframe element that includes the clickable agree button");
+        System.out.println("wait 2 seconds to focus on the frames and load Agree button");
+		try{Thread.sleep(2000);}catch(InterruptedException e){System.out.println(e);} 
 		driver.switchTo().frame(driver.findElement(By.cssSelector("div.components-modal__frame iframe")));
 
 		WebElement agreeElement = this.waitVisibiltyAndFindElement(agreeBtn);
