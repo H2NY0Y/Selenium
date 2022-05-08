@@ -7,7 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 public class MainPage extends PageBase{
 
-	String blogname = "retete6854";		// Please Change this value to the same value from SeleniumTest.java line 32
+	String blogname = "wadaf42208";		// Please Change this value to the same value from SeleniumTest.java line 32
 	private JavascriptExecutor js = (JavascriptExecutor)driver;
 	private final By newPost = By.xpath("//button[@aria-label='Text']");
     private final By blogTitle = By.cssSelector("div[data-subview='postTypeForm'] div[data-name='title'] .editor-wrapper .editor-slot div[aria-label='Post title']");
@@ -61,14 +61,6 @@ public class MainPage extends PageBase{
 		
         System.out.println("mainPage.checkPreviouslyCreatedBlog() --> completed");
 	}
-	
-	/*
-	public String getPageTitle(){		
-		JavascriptExecutor js =(JavascriptExecutor)(this.driver);
-		String pageTitle = js.executeScript("return document.title;").toString();
-		return pageTitle;
-	}
-	*/
 	
 	public String getPageTitle(){	
         System.out.println("mainPage.getPageTitle() =  --> completed");

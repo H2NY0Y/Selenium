@@ -21,14 +21,15 @@ public class RegistrationSteps extends PageBase{
 	}
 	
 	public void acceptPrivacy(){
-        System.out.println("wait 2 seconds to focus on the frames and load Agree button");
-		try{Thread.sleep(2000);}catch(InterruptedException e){System.out.println(e);} 
+        System.out.println("wait 5 seconds to focus on the frames and load Agree button");
+		try{Thread.sleep(5000);}catch(InterruptedException e){System.out.println(e);} 
 		driver.switchTo().frame(driver.findElement(By.cssSelector("div.components-modal__frame iframe")));
 
 		WebElement agreeElement = this.waitVisibiltyAndFindElement(agreeBtn);
 		agreeElement.click();
 		
         System.out.println("registrationSteps.acceptPrivacy() --> completed");
+		
 	}
 	
 	public void signup(String email, String pass, String blogname){

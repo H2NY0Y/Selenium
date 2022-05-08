@@ -27,9 +27,9 @@ public class SeleniumTest {
     public void seleniumTest() {
 		
 		// Please change the following variables according to their names
-		String email = "retete6854@abincol.com";
+		String email = "wadaf42208@eoscast.com";
 		String pass = "i46uxK*dwm@23#I";
-		String blogname = "retete6854";		// Please also change the blogname value in MainPage.java line 10 to the same value you added here
+		String blogname = "wadaf42208";		// Please also change the blogname value in MainPage.java line 10 to the same value you added here
 		// Using VALID fake credit card information for testing
 		String creditCardNumber = "4263982640269299";
 		String ExpirationDate = "02 / 23";
@@ -38,9 +38,6 @@ public class SeleniumTest {
 		
 		RegistrationSteps registrationSteps = new RegistrationSteps(this.driver);
 		registrationSteps.acceptPrivacy();
-		
-        System.out.println("wait 5 seconds for to switch frames and load new page elements");
-		try{Thread.sleep(5000);}catch(InterruptedException e){System.out.println(e);} 
 		
 		registrationSteps.signup(email, pass, blogname);
 		registrationSteps.insertAge();	
